@@ -1,0 +1,471 @@
+@charset "utf-8";
+/* fonts Start */
+@font-face {
+  font-family: "MabinogiClassicR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/MabinogiClassicR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PFStardust";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap");
+/* fonts End */
+
+/* Active */
+li > .active button {
+  background-color: #fdaf33;
+}
+
+/* 전체영역 Start */
+
+html {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "MabinogiClassicR";
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  font-size: 14px;
+  background-color: #864bff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  color: inherit;
+  letter-spacing: inherit;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  line-height: initial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  letter-spacing: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a:link,
+a:visited {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+p,
+span {
+  letter-spacing: -0.03em;
+}
+
+body {
+  overflow: visible;
+}
+
+em {
+  font-family: "MabinogiClassicR";
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* 전체영역 END */
+
+/* Main Area Start */
+
+.mainDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1020px;
+  /* background-color: #A66CFF; */
+  position: relative;
+}
+
+.helloHeader {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.mainTitle {
+  font-size: 6rem;
+  font-family: "Red Hat Display", sans-serif;
+  letter-spacing: -1px;
+  /* color: #28ffc5; */
+  color: #28ffc5;
+  display: inline-block;
+  /* text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: black; */
+}
+
+/* Main Area End */
+
+/* Main Category Area Start */
+.catDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+.catUl {
+  position: relative;
+}
+
+.catLis {
+  display: inline-block;
+  width: 120px;
+  margin: 10px 10px 0;
+}
+
+.catBtns {
+  background-color: #fff;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "MabinogiClassicR";
+  font-weight: 600;
+  font-size: 18px;
+  padding: 30px 30px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: relative;
+}
+
+/* .catBtnsS {
+  background-color: #fdaf33;
+} */
+
+.catBtns:hover {
+  background-color: #fdaf33;
+}
+
+.catBtns:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .catBtns {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+/* Main Category Area End */
+
+/* Musinc Section Area Start */
+
+.sectionDivMain {
+  width: 100%;
+  padding-top: 80px 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.sectionDiv {
+  width: 100%;
+  padding-top: 80px 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.listDivMain {
+  padding: 1rem;
+  width: 1020px;
+  margin: 30px auto 10px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+
+  border-left: 0 solid #28ffc5;
+  transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+}
+
+.listDivMain:hover {
+  padding-left: 0.8rem;
+  border-left: 0.8rem solid #28ffc5;
+}
+
+.listDivMain > :first-child {
+  margin-top: 0;
+}
+
+.listDivMain > :last-child {
+  margin-bottom: 0;
+}
+
+.listDiv {
+  padding: 1rem;
+  width: 1020px;
+  margin: 30px auto 10px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  border-radius: 8px 16px;
+  border-left: 0 solid #28ffc5;
+  transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+}
+
+.listDiv:hover {
+  padding-left: 0.8rem;
+  border-left: 0.8rem solid #28ffc5;
+}
+
+.listDiv > :first-child {
+  margin-top: 0;
+}
+
+.listDiv > :last-child {
+  margin-bottom: 0;
+}
+
+.listNumb {
+  font-size: 2.3rem;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.listImg {
+  width: 400px;
+  border-radius: 8px 16px;
+  float: left;
+  margin-right: 10px;
+}
+
+.listTitle {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.listDesc {
+  display: inline-block;
+  vertical-align: top;
+  width: 465px;
+  margin-top: 15px;
+  font-size: 1.1em;
+  color: #898aa6;
+}
+
+/* Musinc Section Area End */
+
+/* listBtn Start */
+.fill {
+  top: 100px;
+  left: 380px;
+  font-family: "MabinogiClassicR";
+  z-index: 2;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fill::after {
+  content: "";
+  background-color: #28ffc5;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+/* listBtn End */
+
+/* Detail Area Start*/
+.sectionDivDetail {
+  width: 100%;
+  padding-top: 80px 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.detailBanner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.listNumbDetail {
+  font-size: 2.3rem;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.listNumbDetail em {
+  background-color: #28ffc5;
+  border-radius: 4px;
+  padding: 10px 5px 0 5px;
+}
+
+.listDivDetail {
+  padding: 1rem;
+  width: 1020px;
+  height: 770px;
+  margin: 30px auto 10px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border-left: 0 solid #28ffc5;
+  transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+}
+
+.listDivDetail:hover {
+  padding-left: 0.8rem;
+  border-left: 0.8rem solid #28ffc5;
+}
+
+.listDivDetail > :first-child {
+  margin-top: 0;
+}
+
+.listDivDetail > :last-child {
+  margin-bottom: 0;
+}
+
+.detailDiv {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  width: 100%;
+  justify-content: center;
+}
+
+.listImgDetail {
+  width: 200px;
+  border-radius: 8px 16px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Image Button Start */
+
+img:hover {
+  /* transform: none;
+  transition: transform 2s; */
+  filter: brightness(70%);
+}
